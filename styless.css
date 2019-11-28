@@ -1,0 +1,92 @@
+header{
+    background-color: #FFFFFF;
+}
+div.ikonat.twiter a:hover{
+    background-color:darkorange;
+}
+.sing_login_rss_archived{
+    float:right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;  
+    margin-top: -2em;  
+    margin-right: 1em;
+} 
+
+a{
+    color:#97455F;
+    text-decoration: none;
+
+}
+a:hover{
+    color: steelblue;
+}
+header img {
+    background-color: white;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+hr
+{
+    background-color:#97455F;
+}
+body{
+    
+    background-color: #EBEBEB;
+}
+body p{
+    font-size: 40px;
+    color: #333333;
+    margin-top: 2.5em;
+}
+.firstLetter{
+    font-size:55px;
+    margin-left: 0.25em;
+}
+.searchi{
+    float:right;
+    margin-right: 1em;
+    margin-top: -2.5em;
+    letter-spacing: -1em;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    
+}
+
+.searchi ul li button{
+    background-color: #97455F;
+    color: white;
+    border-color: #97455F;
+    border-style: solid;
+    border-bottom-right-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-width: 0.5em;
+}
+input{
+    background-color: white;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: white;
+
+}
+.ikonat ul li button{
+
+    background-position: 5px 4px;
+    background-color: rgb(159, 159, 185);
+    border:none;
+    width: 1.85em;
+    height: 24px;
+    border-radius: 0.925em;
+    margin-top: 0.8em;
+   
+}
+
+.ikonat ul li
+{
+    margin-left: 8px;
+    margin-top: 3px;
+    padding-top: 16px;
+}
