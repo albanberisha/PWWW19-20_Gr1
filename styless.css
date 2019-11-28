@@ -33,11 +33,15 @@ body{
     
     background-color: #EBEBEB;
 }
-body p{
+section p{
     font-size: 40px;
     color: #333333;
     margin-top: 2.5em;
 }
+div p
+{
+	margin-left: 1em;
+}	
 .firstLetter{
     font-size:55px;
     margin-left: 0.25em;
@@ -90,3 +94,74 @@ input{
     margin-top: 3px;
     padding-top: 16px;
 }
+.mySlides 
+{
+	display:none
+}
+.w3-left, .w3-right, .w3-badge 
+{
+	cursor:pointer;
+}
+
+/*.w3-badge 
+{
+	height:13px;width:13px;padding:0;
+}*/
+.w3-badge
+{
+	border-radius:50%
+}
+.w3-border
+{
+	border:1px solid #ccc!important
+}
+.w3-hover-white:hover
+{
+	color:#000!important;
+	background-color:#fff!important
+}
+.mySlides
+{
+	
+	width: 900px;
+	height: 350px;
+	position: absolute;
+	left:59.2px;/*3.7em*/ 
+}
+.w3-display-bottommiddle
+{
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+}
+/*.w3-center
+{
+	text-align:center!important
+}*/
+.w3-hover-text:hover
+{
+	color:white!important
+}
+.w3-hover-text:visited
+{
+	background:white;
+	border:black;
+}
+/*.w3-large
+{
+	font-size:18px!important
+}*/
+.w3-left
+{	margin-bottom:9.5em;
+	margin-right: 50em;
+	
+	float:right;	 
+}
+.w3-left1
+{	margin-bottom:9.5em;
+	margin-right: .1em;
+	float:right;
+}
+
