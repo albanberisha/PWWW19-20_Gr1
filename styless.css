@@ -1,167 +1,246 @@
-header{
-    background-color: #FFFFFF;
+header {
+    background-color: white;
 }
-div.ikonat.twiter a:hover{
-    background-color:darkorange;
-}
-.sing_login_rss_archived{
-    float:right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;  
-    margin-top: -2em;  
-    margin-right: 1em;
-} 
 
-a{
-    color:#97455F;
+body {
+    background-color: white;
+}
+
+.navbar {
+    background-color: white;
+    margin-top: 0.7vmax;
+}
+
+.icons {
+    background-color: white;
+    padding-left: 1vmax;
+}
+
+.icons a {
+    background-color: #D2D2D2;
+    align-content: center;
+    margin-right: 0.6%;
+    padding: 0.2vmin 1.9vmin;
+    border-radius: 50%;
     text-decoration: none;
-
 }
-a:hover{
+
+.icons a:hover {
+    background-color: #EE802F;
+}
+
+.facebook {
+    background: url(image/facebook.png) no-repeat;
+    background-position: 5px 3px;
+}
+
+.googleplus {
+    background: url(image/google.png) no-repeat;
+    background-position: 5px 4px;
+}
+
+.in {
+    background: url(in.png) no-repeat;
+    background-position: 5px 5.5px;
+}
+
+.twitter {
+    background: url(t.png) no-repeat;
+    background-position: 5px 5.5px;
+}
+
+.login {
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-top: -1em;
+    margin-right: 1em;
+}
+
+a {
+    color: #97455F;
+    text-decoration: none;
+}
+
+a:hover {
     color: steelblue;
 }
+
+.w3-left a {
+    color: black;
+    text-decoration: none;
+}
+
+.w3-left a:hover {
+    color: white;
+}
+
+.w3-left1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.w3-left1 a:hover {
+    color: white;
+}
+
 header img {
     background-color: white;
     margin-top: 1em;
     margin-left: 1em;
 }
-hr
-{
-    background-color:#97455F;
-}
-body{
-    
-    background-color: #EBEBEB;
-}
-section p{
-    font-size: 40px;
-    color: #333333;
-    margin-top: 2.5em;
-}
-div p
-{
-	margin-left: 1em;
-}	
-.firstLetter{
-    font-size:55px;
-    margin-left: 0.25em;
-}
-.searchi{
-    float:right;
-    margin-right: 1em;
-    margin-top: -2.5em;
-    letter-spacing: -1em;
-}
-ul li{
-    list-style: none;
-    display: inline;
-    
+
+hr {
+    background-color: #97455F;
 }
 
-.searchi ul li button{
+section p {
+    font-size: 2vmax;
+    color: #333333;
+    margin-top: 1.8vmax;
+}
+
+.imaginative {
+    background-color: rgb(141, 141, 141);
+    font-size: 1.4vmax;
+}
+
+.table {
     background-color: #97455F;
     color: white;
+    text-decoration: none;
+    font-family: helvetica, arial, sans-serif;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 5em;
+    border-width: 1vmax;
+    margin-top: 3em;
+    border-color: #97455F;
+    border-style: solid;
+    border-width: 1vmax;
+    color: white;
+}
+
+.table a:hover {
+    background-color: #6A3144;
+    border-color: #6A3144;
+    color: white;
+    text-decoration: none;
+}
+
+.firstLetter {
+    font-size: 150%;
+    margin-left: 2%;
+    margin-top: 50%;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.searchi ul {
+    float: right;
+    font-size: 1vmax;
+}
+
+.submiti button {
+    background-color: #97455F;
+    color: white;
+    float: right;
+    width: 7.3vmax;
+    height: 2.3vmax;
+    margin-top: -4.5vmax;
+    margin-right: 8.5vmax;
     border-color: #97455F;
     border-style: solid;
     border-bottom-right-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    border-width: 0.5em;
+    border-top-right-radius: 0.3vmax;
+    border: 1vmax;
+    border-length: 2vmax;
 }
-input{
-    background-color: white;
+
+button:hover {
+    background-color: #6A3144;
+}
+
+input[type=search] {
+    float: right;
+    margin-right: 16em;
     border-top-left-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
     border-style: solid;
     border-width: 0.5em;
     border-color: white;
-
-}
-.ikonat ul li button{
-
-    background-position: 5px 4px;
-    background-color: rgb(159, 159, 185);
-    border:none;
-    width: 1.85em;
-    height: 24px;
-    border-radius: 0.925em;
-    margin-top: 0.8em;
-   
+    margin-top: -4.5vmax;
 }
 
-.ikonat ul li
-{
-    margin-left: 8px;
-    margin-top: 3px;
-    padding-top: 16px;
-}
-.mySlides 
-{
-	display:none
-}
-.w3-left, .w3-right, .w3-badge 
-{
-	cursor:pointer;
+.link a {
+    background-color: #97455F;
+    color: white;
+    display: inline;
+    margin-right: 0.1vmax;
+    border-style: solid;
+    list-style: none;
 }
 
-/*.w3-badge 
-{
-	height:13px;width:13px;padding:0;
-}*/
-.w3-badge
-{
-	border-radius:50%
-}
-.w3-border
-{
-	border:1px solid #ccc!important
-}
-.w3-hover-white:hover
-{
-	color:#000!important;
-	background-color:#fff!important
-}
-.mySlides
-{
-	
-	width: 900px;
-	height: 350px;
-	position: absolute;
-	left:59.2px;/*3.7em*/ 
-}
-.w3-display-bottommiddle
-{
-	position:absolute;
-	left:50%;
-	bottom:0;
-	transform:translate(-50%,0%);
-	-ms-transform:translate(-50%,0%);
-}
-/*.w3-center
-{
-	text-align:center!important
-}*/
-.w3-hover-text:hover
-{
-	color:white!important
-}
-.w3-hover-text:visited
-{
-	background:white;
-	border:black;
-}
-/*.w3-large
-{
-	font-size:18px!important
-}*/
-.w3-left
-{	margin-bottom:9.5em;
-	margin-right: 50em;
-	
-	float:right;	 
-}
-.w3-left1
-{	margin-bottom:9.5em;
-	margin-right: .1em;
-	float:right;
+.mySlides {
+    display: none
 }
 
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer;
+}
+
+.w3-badge {
+    border-radius: 50%
+}
+
+.w3-border {
+    border: 1px solid #ccc!important
+}
+
+.w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.mySlides {
+    width: 900px;
+    height: 350px;
+    position: relative;
+    left: 59.2px;
+    /*3.7em*/
+}
+
+.w3-display-bottommiddle {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.w3-hover-text:hover {
+    color: white!important
+}
+
+.w3-hover-text:visited {
+    background: white;
+    border: black;
+}
+
+.w3-left {
+    margin-bottom: 10em;
+    margin-right: 50em;
+    float: right;
+}
+
+.w3-left1 {
+    margin-bottom: 10em;
+    margin-right: .1em;
+    float: right;
+}
