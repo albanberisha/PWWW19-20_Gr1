@@ -6,21 +6,20 @@ body {
     background-color: white;
 }
 
-.navbar {
-    background-color: white;
+div {
     margin-top: 0.7vmax;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.icons {
-    background-color: white;
-    padding-left: 1vmax;
+.mainmenu {
+    background-color: #D2D2D2;
 }
 
 .icons a {
     background-color: #D2D2D2;
-    align-content: center;
     margin-right: 0.6%;
-    padding: 0.2vmin 1.9vmin;
+    padding: 0.2vmin 1.8vmin;
     border-radius: 50%;
     text-decoration: none;
 }
@@ -52,9 +51,9 @@ body {
 .login {
     float: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
-    margin-top: -1em;
-    margin-right: 1em;
+    font-size: 1.2vmax;
+    margin-top: -2vmin;
+    margin-right: 0.2vmax;
 }
 
 a {
@@ -64,6 +63,119 @@ a {
 
 a:hover {
     color: steelblue;
+}
+
+article {
+    font-size: 2vmax;
+    background-color: white;
+    margin-top: 0.8vmax;
+}
+
+article div:first-child {
+    background-color: rgb(141, 141, 141);
+}
+
+.imaginative p {
+    padding-top: 3vmax;
+    font-size: 2.8vmax;
+    padding-bottom: 15vmax;
+}
+
+.firstLetter {
+    font-size: 150%;
+    margin-top: 50;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.searchi ul {
+    float: right;
+    font-size: 1vmax;
+}
+
+button {
+    background-color: #97455F;
+    color: white;
+    border-color: #97455F;
+    border-style: solid;
+}
+
+.submiti button {
+    float: right;
+    width: 7.3vmax;
+    height: 2.3vmax;
+    margin-top: -18vmax;
+    border-bottom-right-radius: 0.3vmax;
+    border-top-right-radius: 0.3vmax;
+    border: 1vmax;
+    border-length: 2vmax;
+}
+
+input[type=search] {
+    float: right;
+    margin-right: 7.5em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: white;
+    margin-top: -18vmax;
+}
+
+button:hover {
+    background-color: #6A3144;
+}
+
+.buttongroup div {
+    background-color: white;
+    margin-top: -0.001em;
+}
+
+.buttongroup div ul {
+    background-color: #97455F;
+    margin-top: -6em;
+    margin-left: -1em;
+    margin-right: -1em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.buttonlist {
+    background-color: white;
+}
+
+.buttongroup button {
+    color: white;
+    font-size: 1.25vmax;
+    cursor: pointer;
+    border: 3vmax;
+    height: 2em;
+    padding: center;
+}
+
+.buttongroup a:first-child button {
+    border-top-left-radius: 0.5em;
+}
+
+.menu1 a button {}
+
+.table a:hover {
+    background-color: #6A3144;
+    border-color: #6A3144;
+    color: white;
+    text-decoration: none;
+}
+
+.link a {
+    background-color: #97455F;
+    color: white;
+    display: inline;
+    margin-right: 0.1vmax;
+    border-style: solid;
+    list-style: none;
 }
 
 .w3-left a {
@@ -85,108 +197,12 @@ a:hover {
 }
 
 header img {
-    background-color: white;
     margin-top: 1em;
     margin-left: 1em;
 }
 
 hr {
     background-color: #97455F;
-}
-
-section p {
-    font-size: 2vmax;
-    color: #333333;
-    margin-top: 1.8vmax;
-}
-
-.imaginative {
-    background-color: rgb(141, 141, 141);
-    font-size: 1.4vmax;
-}
-
-.table {
-    background-color: #97455F;
-    color: white;
-    text-decoration: none;
-    font-family: helvetica, arial, sans-serif;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    margin-left: 1em;
-    margin-right: 5em;
-    border-width: 1vmax;
-    margin-top: 3em;
-    border-color: #97455F;
-    border-style: solid;
-    border-width: 1vmax;
-    color: white;
-}
-
-.table a:hover {
-    background-color: #6A3144;
-    border-color: #6A3144;
-    color: white;
-    text-decoration: none;
-}
-
-.firstLetter {
-    font-size: 150%;
-    margin-left: 2%;
-    margin-top: 50%;
-}
-
-ul li {
-    list-style: none;
-    display: inline;
-}
-
-.searchi ul {
-    float: right;
-    font-size: 1vmax;
-}
-
-.submiti button {
-    background-color: #97455F;
-    color: white;
-    float: right;
-    width: 7.3vmax;
-    height: 2.3vmax;
-    margin-top: -4.5vmax;
-    margin-right: 8.5vmax;
-    border-color: #97455F;
-    border-style: solid;
-    border-bottom-right-radius: 0.3em;
-    border-top-right-radius: 0.3vmax;
-    border: 1vmax;
-    border-length: 2vmax;
-}
-
-button:hover {
-    background-color: #6A3144;
-}
-
-input[type=search] {
-    float: right;
-    margin-right: 16em;
-    border-top-left-radius: 0.3em;
-    border-bottom-left-radius: 0.3em;
-    border-style: solid;
-    border-width: 0.5em;
-    border-color: white;
-    margin-top: -4.5vmax;
-}
-
-.link a {
-    background-color: #97455F;
-    color: white;
-    display: inline;
-    margin-right: 0.1vmax;
-    border-style: solid;
-    list-style: none;
-}
-
-.mySlides {
-    display: none
 }
 
 .w3-left,
