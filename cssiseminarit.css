@@ -3,7 +3,6 @@
     position: relative;
 }
 
-
 /* dizajnimi i pjeses se headerit*/
 
 .mainMenu {
@@ -329,4 +328,30 @@ blockquote a {
     text-decoration: none;
     color: #93435c;  
     font-size: 13.5px;  
+}
+hr.new1 {
+  border: 3px solid #D2D2D2;
+}
+footer .artikujt .forma .nr1 
+{
+        background-color: #EBEBEB;
+          text-align: left;
+    text-overflow: clip;
+    font-size: 1.2vmax;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+footer
+{
+    background-color: #EBEBEB;
+}
+footer fieldset
+{
+  
+    border: 0;
+}
+.pjposhte
+{
+    margin-top: -1.3em;
+    text-align: right;
 }
