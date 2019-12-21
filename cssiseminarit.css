@@ -1,357 +1,416 @@
-.page-wrap {
-    margin: 0 auto;
-    position: relative;
-}
-
-/* dizajnimi i pjeses se headerit*/
-
-.mainMenu {
-    background-color: white;
-    margin: 0 1em 0 1em;
-    padding: 0.5em 0 0.5em 0;
-    list-style-type: none;
-    font-size: 14.5px;
-}
-
-.icons {
-    background-color: white;
-    margin-top: 0.3em;
-}
-
-.icons a:hover {
-    background-color: #e87d2e;
-}
-
-.icons a {
-    text-decoration: none;
-    background-color: #d2d2d2;
-    padding: 0.2em 0.8em;
-    margin-right: 0.6%;
-    border-radius: 50%;
-}
-
-a:hover {
-    color: steelblue;
-}
-
-ul li {
-    list-style: none;
-    display: inline;
-}
-
-.login {
-    margin-top: -1.25em;
-    float: right;
-}
-
-.login a {
-    text-decoration: none;
-}
-
-
-/** dizajnimi i emrit te biznesit**/
-
-.imaginative {
-    background-color: #e3e3e3;
-    padding: 1.2em 0 5em 0;
-    font-size: 2.8vmax;
-    color: #323232;
-}
-
-.firstLetter {
-    font-size: 150%;
-    margin-left: 0.35em;
-}
-
-#t1 {
-    margin-left: 10.5em;
-    margin-top: -3.1em;
-    font-size: 1.32vmax;
-    border-spacing: 6.5px;
-}
-
-#t1 tr td {
-    border-top-style: none;
-    border-bottom-style: none;
-    border-left-style: solid;
-    border-width: 1.1px;
-    color: #a1a1a1;
-    padding-left: 5px;
-}
-
-button {
-    background-color: #93435c;
-    color: white;
-    border-color: #93435c;
-    border-style: solid;
-}
-
-.imaginative ul {
-    float: right;
-    margin-right: 0.5em;
-    margin-top: -1.5em;
-}
-
-.submiti button {
-    border-bottom-right-radius: 0.5vmax;
-    border-top-right-radius: 0.5vmax;
-    border: 1vmax;
-    width: 7vmax;
-    height: 2.6vmax;
-    font-size: 1.25vmax;
-}
-
-input[type=search] {
-    margin-right: -0.58em;
-    border-top-left-radius: 0.5vmax;
-    border-bottom-left-radius: 0.5vmax;
-    border-style: solid;
-    border-color: white;
-    width: 26vmax;
-    height: 2.6vmax;
-    font-size: 1.25vmax;
-    padding-left: 0.5em;
-}
-
-input[type=search]:hover {
-    width: 28vmax;
-    border-color: white;
-    outline-color: none;
-}
-
-input[type=search]:focus {
-    outline: none;
-}
-
-button:hover {
-    background-color: #6a3144;
-}
-
-.buttongroup {
-    text-align: left;
-    text-overflow: clip;
-    font-size: 1.2vmax;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-top: -10vmax;
-    padding: 0.7vmax 0.7vmax 0.65vmax 0.4vmax;
-    border-radius: 0.6vmax 0.6vmax 0 0;
-    background-color: #93435c;
-}
-
-.buttongroup a {
-    text-decoration: none;
-    color: white;
-    background-color: #93435c;
-    padding: 0.7vmax 0.7vmax 0.7vmax 0.7vmax;
-    margin-right: -0.4vmax;
-}
-
-.buttongroup a:first-child {
-    margin-left: -0.4vmax;
-    border-top-left-radius: 0.6vmax;
-}
-
-.buttongroup a:hover {
-    background-color: #6a3144;
-}
-
-main {
-    margin-left: 1.2vmax;
-    margin-right: 1.2vmax;
-    background-color: white;
-}
-
-main .slideShow {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: white;
-    position: relative;
-    margin: auto;
-}
-
-.imageHolder {
-    display: none;
-}
-
-.imageHolder img {
-    width: 100%;
-    height: 100%;
-}
-
-.diferentpages {
-    padding-top: 2vmax;
-    margin: 0 2vmax;
-}
-
-.dot {
-    cursor: pointer;
-    height: 1.5vmin;
-    width: 1.5vmin;
-    margin: 1vmax 2px;
-    background-color: black;
-    border-radius: 50%;
-    border: solid 2px;
-    border-color: black;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: white;
-    border-color: black;
-}
-
-.dot:focus {
-    border-color: black;
-}
-
-form {
-    margin-top: 2vmax;
-    border: none;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-}
-
-form fieldset.nr1 {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    border-color: #EcEcEc;
-    background-color: white;
-}
-
-form fieldset.nr1 legend {
-    text-align: center;
-    font-size: 1.8vmax;
-    text-transform: uppercase;
-}
-
-/*.artikull {
-    table-layout: fixed;
-    width: 100%;
-    margin-left: -0.7em;
-    margin-top: 1.3vmax;
-    display: block;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: : start;
-}*/
-
-fieldset div h3,p{
-    margin-left: 5px;
-    letter-spacing: 0.5px;
-}
-
-fieldset div h3 a{
-    text-decoration: none;
-    color: #93435c;
-}
-
-fieldset div{   
-    margin-top: 25px;
-    margin-left: -12px;
-    display: inline-block;
-    width: 34%;
-}
-fieldset div img{
-    float: left;
-    display: inline-block;
-    padding-right: 10px;
-}
-
-table th fieldset{
-    margin-top: 25px;
-    font-size: 1.8vmax;
-    float:left;
-    width: 23.5em;
-    border-left: 0;
-    border-bottom: 0;
-    border-right: 0;
-    border-top-width: 2px;
-    border-color: #EcEcEc;
-}
-
-table th fieldset#nr3{
-    margin-left: 22.5px;
-}
-
-table tr td div#pjesa1 a{
-    color: #93435c;
-    text-decoration: none;
-}
-
-table tr td div#pjesa1 p {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-table tr td img{
-    border-radius: 50%;
-    float: left;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-table tr td.pjesa2 p{
-    float: left;
-    margin-left: 0.8em;
-    margin-top: 5.5em;
-    padding-left: 0.75em;
-}
-
-table blockquote{
-    font-family: Georgia, serif;
-    font-size: 15px;
-    font-style: normal;
-    width: 500px;
-    margin: -6em 0.5em;
-    padding: 0.35em 70px;
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
-}
-blockquote:before{
-    display: block;
-    padding-left: 10px;
-    content: "\201C";
-    font-size: 120px;
-    position: absolute;
-    left: 2.5px;
-    top: -30px;
-    color: #7a7a7a
-}
-blockquote a {
-    text-decoration: none;
-    color: #93435c;  
-    font-size: 13.5px;  
-}
-hr.new1 {
-  border: 3px solid #D2D2D2;
-}
-footer .artikujt .forma .nr1 
-{
+    .page-wrap {
+        margin: 0 auto;
+        position: relative;
+    }
+    /* dizajnimi i pjeses se headerit*/
+    
+    .in {
+        background: url(images/in.png) no-repeat;
+        background-position: 3px 3px;
+    }
+    
+    .facebook {
+        background: url(images/f.png) no-repeat;
+        background-position: 7px 3px;
+    }
+    
+    .googleplus {
+        background: url(images/g.png) no-repeat;
+        background-position: 6px 4px;
+    }
+    
+    .mainMenu {
+        background-color: white;
+        margin: 0 1em 0 1em;
+        padding: 0.5em 0 0.5em 0;
+        list-style-type: none;
+        font-size: 14.5px;
+    }
+    
+    .icons {
+        background-color: white;
+        margin-top: 0.3em;
+    }
+    
+    .icons a:hover {
+        background-color: #e87d2e;
+    }
+    
+    .icons a {
+        text-decoration: none;
+        background-color: #d2d2d2;
+        padding: 0.2em 0.8em;
+        margin-right: 0.6%;
+        border-radius: 50%;
+    }
+    
+    a {
+        color: #93435c;
+        ;
+    }
+    
+    a:hover {
+        color: steelblue;
+    }
+    
+    ul li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .login {
+        margin-top: -1.25em;
+        float: right;
+        margin-right: 0.3vmax;
+    }
+    
+    .login a {
+        text-decoration: none;
+    }
+    /** dizajnimi i emrit te biznesit**/
+    
+    .imaginative {
+        background-color: #e3e3e3;
+        padding: 1.2em 0 5em 0;
+        font-size: 2.8vmax;
+        color: #323232;
+    }
+    
+    .firstLetter {
+        font-size: 150%;
+        margin-left: 0.35em;
+    }
+    
+    #t1 {
+        margin-left: 10.5em;
+        margin-top: -3.1em;
+        font-size: 1.32vmax;
+        border-spacing: 6.5px;
+    }
+    
+    #t1 tr td {
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: solid;
+        border-width: 1.1px;
+        color: #a1a1a1;
+        padding-left: 5px;
+    }
+    
+    button {
+        background-color: #93435c;
+        color: white;
+        border-color: #93435c;
+        border-style: solid;
+    }
+    
+    .imaginative ul {
+        float: right;
+        margin-right: 0.5em;
+        margin-top: -1.5em;
+    }
+    
+    .submiti button {
+        border-bottom-right-radius: 0.5vmax;
+        border-top-right-radius: 0.5vmax;
+        border: 1vmax;
+        width: 7vmax;
+        height: 2.6vmax;
+        font-size: 1.25vmax;
+    }
+    
+    input[type=search] {
+        margin-right: -0.58em;
+        border-top-left-radius: 0.5vmax;
+        border-bottom-left-radius: 0.5vmax;
+        border-style: solid;
+        border-color: white;
+        width: 26vmax;
+        height: 2.6vmax;
+        font-size: 1.25vmax;
+        padding-left: 0.5em;
+    }
+    
+    input[type=search]:hover {
+        width: 28vmax;
+        border-color: white;
+        outline-color: none;
+    }
+    
+    input[type=search]:focus {
+        outline: none;
+    }
+    
+    button:hover {
+        background-color: #6a3144;
+    }
+    
+    .buttongroup {
+        text-align: left;
+        text-overflow: clip;
+        font-size: 1.2vmax;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: -10vmax;
+        padding: 0.7vmax 0.7vmax 0.7vmax 0.4vmax;
+        border-radius: 0.6vmax 0.6vmax 0 0;
+        background-color: #93435c;
+    }
+    
+    .buttongroup a {
+        text-decoration: none;
+        color: white;
+        background-color: #93435c;
+        padding: 0.7vmax 0.7vmax 0.7vmax 0.7vmax;
+        margin-right: -0.4vmax;
+    }
+    
+    .buttongroup a:first-child {
+        margin-left: -0.4vmax;
+        border-top-left-radius: 0.6vmax;
+    }
+    
+    .buttongroup a:hover {
+        background-color: #6a3144;
+    }
+    
+    main {
+        margin-left: 1.2vmax;
+        margin-right: 1.2vmax;
+        background-color: white;
+    }
+    
+    main .slideShow {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        margin: auto;
+    }
+    
+    .imageHolder {
+        display: none;
+    }
+    
+    .imageHolder img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .diferentpages {
+        padding-top: 2vmax;
+        margin: 0 2vmax;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 1.5vmin;
+        width: 1.5vmin;
+        margin: 1vmax 2px;
+        background-color: black;
+        border-radius: 50%;
+        border: solid 2px;
+        border-color: black;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: white;
+        border-color: black;
+    }
+    
+    .dot:focus {
+        border-color: black;
+    }
+    
+    form {
+        margin-top: 2vmax;
+        border: none;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+    }
+    
+    form fieldset.nr1 legend {
+        text-align: center;
+        font-size: 1.8vmax;
+        text-transform: uppercase;
+    }
+    /*Pjesa Te rejat*/
+    
+    .forma fieldset {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-top: 0.3vmax solid rgb(131, 125, 125);
+        letter-spacing: 0.5px;
+        margin-bottom: 2.4vmax;
+    }
+    
+    .terejat a {
+        text-decoration: none;
+    }
+    
+    .terejat p {
+        color: #464242;
+    }
+    
+    .terejat a:hover {
+        color: steelblue;
+    }
+    
+    .terejat {
+        margin: -2.4vmin;
+    }
+    
+    .nr1 .terejat div {
+        float: left;
+        margin-top: 2.4vmax;
+        display: inline-block;
+        width: 33.3%;
+    }
+    
+    .nr1 div img {
+        float: left;
+        padding-left: 2px;
+        padding-right: 1.7vmax;
+    }
+    /*Rregullimi i pjeses angazhime dhe publikime*/
+    
+    .terejat2 {
+        width: 100%;
+    }
+    
+    .terejat2 p {
+        color: #464242;
+    }
+    
+    .terejat2 a {
+        text-decoration: none;
+    }
+    
+    .terejat2 div {
+        float: left;
+        margin-top: 3.4vmax;
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .forma p {
+        color: #464242;
+    }
+    
+    .forma #nr2 img {
+        border-radius: 50%;
+        float: left;
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: -10px;
+    }
+    
+    .angazhimet {
+        margin-bottom: 30px;
+    }
+    
+    #nr2 legend {
+        text-align: center;
+    }
+    
+    #nr2 .author {
+        margin-top: -115px;
+        margin-left: 60px;
+    }
+    
+    blockquote {
+        font-family: Georgia, serif;
+        font-size: 15px;
+        font-style: normal;
+        position: relative;
+        color: #383838;
+        margin-left: -10px;
+    }
+    
+    blockquote:before {
+        display: block;
+        content: "\201C";
+        font-size: 120px;
+        color: #7a7a7a
+    }
+    
+    blockquote a,
+    .readmore {
+        text-decoration: none;
+        color: #93435c;
+        font-size: 13.5px;
+    }
+    /*Rregullimi i contact us now*/
+    
+    .buttongroup3 .info {
+        background-color: #93435c;
+        width: 4vmax;
+        height: 100%;
+        /*display: inline-flex;*/
+    }
+    
+    .buttongroup1 div:first-child {
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        text-overflow: clip;
+        color: white;
+        font-size: 2.5vmax;
+        padding: 0.7vmax 0.7vmax 0.7vmax 0.7vmax;
+        border-radius: 0.6vmax;
+        background-color: #93435c;
+    }
+    
+    .buttongroup1 h1 {
+        margin-left: 1vmax;
+    }
+    
+    .buttongroup1 p {
+        font-size: 1.8vmax;
+        margin-left: 1vmax;
+    }
+    
+    .buttongroup1 .contactusnow {
+        margin-top: -5vmax;
+        margin-bottom: 10vmax;
+    }
+    
+    .buttongroup1 a {
+        text-decoration: none;
+        float: right;
+        color: #93435c;
+        background-color: white;
+        font-size: 2.5vmax;
+        margin-right: 1.3vmax;
+        padding: 0.4vmax 0.5vmax 0.5vmax 0.5vmax;
+        border-radius: 0.6vmax;
+    }
+    
+    .contactusnow a:hover {
+        color: #6a3144;
+        ;
+    }
+    /*rregullimi i footerit*/
+    
+    footer {
         background-color: #EBEBEB;
-          text-align: left;
-    text-overflow: clip;
-    font-size: 1.2vmax;
-    margin-right: 1em;
-    margin-left: 1em;
-}
-footer
-{
-    background-color: #EBEBEB;
-}
-footer fieldset
-{
-  
-    border: 0;
-}
-.pjposhte
-{
-    margin-top: -1.3em;
-    text-align: right;
-}
+    }
+    
+    #foot4 p {}
+    
+    #foot3 p #name1 {
+        border-radius: 0.4vmax 0.4vmax 0.4vmax 0.4vmax;
+        margin-top: 1em;
+        border-style: solid;
+        border-color: white;
+        outline-color: none;
+        padding-top: 1em;
+        margin-left: 30em;
+    }
+    
+    .pjposhte {}
