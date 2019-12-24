@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="information.css">
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="cssiseminarit.css">
 
 </head>
-
 <body>
-    <header>
-        <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
-    </header>
-    <div class="forma">
-        <form method="post">
-            <p>
-                <label class="required" for="username" id="text" autoselect><b>Emri:</b></label>
-                <ul class="inline">
+   <header>
+            <div class="mainMenu">
+                <ul class="icons">
                     <li>
-                        <input type="text" placeholder="Sheno Emrin" name="uname" required>
+                        <a href="https://www.linkedin.com/" class="in"></a>
+                        <a href="https://www.twitter.com/" class="twitter"></a>
+                        <a href="https://www.facebook.com/" class="facebook"></a>
+                        <a href="http://www.googleplus.com" class="googleplus"></a>
+                        <a href="#" class="wifi"></a>
                     </li>
                 </ul>
-            </p>
-            <p>
-                <label class="required" for="password" id="text"><b>Paswordi:</b></label>
-                <ul class="inline">
+                <ul class="login">
                     <li>
-                        <input type="password" placeholder="Sheno Paswordin" name="psw" required>
+                        <a href="sign.html">Sign up | </a>
+                        <a href="login.html">Login | </a>
+                        <a href="#">RSS Feeds | </a>
+                        <a href="http://localhost:1234/ushtrime/Seminari/workapply.php">Apply </a>
                     </li>
                 </ul>
+            </div>
+            <nav class="imaginative">
+                <p><span class="firstLetter">T</span>ROFTA</p>
+                <table id="t1">
+                    <tr>
+                        <td rowspan="2">
+                            <p> Restaurant <br> dhe Hotel
+                        </td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><input type="search" placeholder="Search Our Website..."></li>
+                    <li><a href="#" class="submiti"><button>SUBMIT</button></a></li>
+                </ul>
+            </nav>
+            <nav class="buttongroup">
+                <a href="Seminari.html">HOME</a>
+                <a href="Template.html">STYLEDEMO</a>
+                <a href="Template1.html">FULL WIDTH</a>
+                <a href="Template2.html">DROPDOWN</a>
+                <a href="Gallery.html">GALLERY</a>
+                <a href="Template4.html">PORTFOLIO</a>
+                <a href="Template5.html">LINK TEST</a>
+                <a href="Template6.html">LONG LINK TEXT</a>
+            </nav>
+        </header>
 
-            </p>
-            <p>
-                <ul class="inline">
-                    <li>
-                        <button type="submit">Hyrje</button>
-                    </li>
-                </ul>
 
-            </p>
-            <p>
-                <label id="text">
-                <input type="checkbox" checked="checked" name="remember"> Me mbaj mend.
-         </label>
-            </p>
-            <p class="forgotpsw">
-                <ul class="inline">
-                    <li>
-                        <span class="psw">Krijo nje <a href="sign.html">llogari</a> te re.</span>
-                    </li>
-                </ul>
-            </p>
-        </form>
-    </div>
+<form action="action_page.php" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+
 </body>
-
 </html>
