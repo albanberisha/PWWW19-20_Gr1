@@ -62,7 +62,7 @@
 
 <body>
     <header>
-        <button class="back_button"><a href="Seminari.html"><b>Go Back</b></a></button>
+    <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
     </header>
     <div class="forma">
         <h1>Aplikim per pune</h1>
@@ -210,7 +210,7 @@
                         </div>
                     </li>
                     <li>
-                        <button class="submit">Sumbit</button> </li>
+                        <button class="submit">Apliko</button> </li>
                 </ul>
 
             </p>
