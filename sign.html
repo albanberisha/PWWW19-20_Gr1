@@ -1,90 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="sign.css">
-  <link rel="stylesheet" href="cssiseminarit.css">
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="information.css">
 
 </head>
+
 <body>
-   <header>
-            <div class="mainMenu">
-                <ul class="icons">
+    <header>
+        <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
+    </header>
+    <div class="forma">
+        <h1>Regjistrohu</h1>
+        <form method="post">
+            <p>
+                <label class="required" for="username" id="text" autoselect><b>Email:</b></label>
+                <ul class="inline">
                     <li>
-                        <a href="https://www.linkedin.com/" class="in"></a>
-                        <a href="https://www.twitter.com/" class="twitter"></a>
-                        <a href="https://www.facebook.com/" class="facebook"></a>
-                        <a href="http://www.googleplus.com" class="googleplus"></a>
-                        <a href="#" class="wifi"></a>
+                        <input type="text" placeholder="Sheno Emailin" name="uname" required>
                     </li>
                 </ul>
-                <ul class="login">
+            </p>
+            <p>
+                <label class="required" for="password" id="text"><b>Paswordi:</b></label>
+                <ul class="inline">
                     <li>
-                        <a href="sign.html">Sign up | </a>
-                        <a href="login.html">Login | </a>
-                        <a href="#">RSS Feeds | </a>
-                        <a href="http://localhost:1234/ushtrime/Seminari/workapply.php">Apply </a>
+                        <input type="password" placeholder="Sheno Paswordin" name="psw" required>
                     </li>
                 </ul>
-            </div>
-            <nav class="imaginative">
-                <p><span class="firstLetter">T</span>ROFTA</p>
-                <table id="t1">
-                    <tr>
-                        <td rowspan="2">
-                            <p> Restaurant <br> dhe Hotel
-                        </td>
-                    </tr>
-                </table>
-                <ul>
-                    <li><input type="search" placeholder="Search Our Website..."></li>
-                    <li><a href="#" class="submiti"><button>SUBMIT</button></a></li>
+            </p>
+            <p>
+                <label class="required" for="password" id="text"><b>Perserit paswordin:</b></label>
+                <ul class="inline">
+                    <li>
+                        <input type="password" placeholder="Perserit Paswordin" name="psw" required>
+                    </li>
                 </ul>
-            </nav>
-            <nav class="buttongroup">
-                <a href="Seminari.html">HOME</a>
-                <a href="Template.html">STYLEDEMO</a>
-                <a href="Template1.html">FULL WIDTH</a>
-                <a href="Template2.html">DROPDOWN</a>
-                <a href="Gallery.html">GALLERY</a>
-                <a href="Template4.html">PORTFOLIO</a>
-                <a href="Template5.html">LINK TEST</a>
-                <a href="Template6.html">LONG LINK TEXT</a>
-            </nav>
-        </header>
-
-
-
-<form action="action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <h1>Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
-  </div>
-</form>
-
+            </p>
+            <p>
+                <label id="text">
+                <input type="checkbox" checked="checked" name="remember"> Me mbaj mend.
+         </label>
+            </p>
+            <p>
+                <label id="text">
+                    Duke krijuar nje llogari te re ju pranoni <a href="#" style="color:dodgerblue">Kushtet e Pergjithshme</a> tona.
+                </label>
+            </p>
+            <p>
+                <ul class="inline">
+                    <li>
+                        <button type="submit">Regjistrohu</button>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul class="inline">
+                    <li>
+                        <label>Tashme keni nje llogari? Atehere hyni <a href="login.html" style="color:dodgerblue">ketu</a>. 
+                     </label>
+                    </li>
+                </ul>
+            </p>
 
 </body>
+
 </html>
