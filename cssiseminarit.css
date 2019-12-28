@@ -188,14 +188,7 @@
         position: relative;
         margin: auto;
     }
-    
-    .imageHolder {
-        display: none;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-    
+
     .imageHolder img {
         width: 100%;
         height: 100%;
@@ -503,10 +496,39 @@ hr.new1 {
         margin-top: .7vmax;
     }
 
-  
+.imageHolder {
+        display: none;
+        position: relative;
+        text-align: left;
+        color:#383838;
+     }
+    
 
-    .bottom-right {
+.bottom-right {
   position: absolute;
   bottom: 2vmax;
   right: 1vmax;
+  width:50%;
+  height:10vmax;
+  background:rgba(255,255,255,0.7);
+  padding-bottom:1vmax; 
+  padding-left:1vmax;
+}
+.bottom-right h3
+{
+      font-size: 3vmax;   
+}
+.bottom-right p
+{
+      font-size: 1.5vmax;   
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+#map
+{
+    height: 50px;
+    width:50px;
 }
