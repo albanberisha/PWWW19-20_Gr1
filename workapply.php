@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="information.css" >
     <style>
-        .prapa:after {
-            content: ""
+        
+        .forma h1{
+            text-shadow: 3px 2px rgb(136, 136, 255);
         }
 
-        .forma {
-            text-shadow: 3px 2px #e3e3e3;
-        }
 
         h1 {
             position: relative;
@@ -183,7 +181,7 @@
                         </div>
                     </li>
                     <li>
-                        <textarea class="komentet" name="komentet" cols="30" rows="5" placeholder="Sheno aftesite personale te tjera"></textarea>
+                        <textarea class="komentet" name="komentet" cols="30" rows="5" wrap="hard" placeholder="Sheno aftesite personale te tjera"></textarea>
                     </li>
                 </ul>
             </p>
@@ -222,7 +220,6 @@
         </form>
     </div>
 </body>
-
 </html>
 
 

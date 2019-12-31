@@ -1,13 +1,25 @@
 header {
-    background-color: white;
     padding-bottom: 0.9vmax;
     padding-top: 0.7vmax;
     padding-left: 1em;
 }
 
-.forma {
-    background-color: white;
+html {
+    background-image: url(images/back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vmax 100%;
 }
+
+body {
+    padding: 0;
+}
+
+footer {
+    background-color: blue;
+}
+
+.forma {}
 
 h1 {
     margin-left: 9vmax;
@@ -15,7 +27,7 @@ h1 {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
-    background-color: white;
+    background-color: none;
     margin-right: 23vmax;
 }
 
@@ -27,6 +39,7 @@ form {
     border-color: #8b8b8b;
     text-align: left;
     font-size: 17px;
+    box-shadow: 5px 5px 5px rgb(136, 136, 255);
 }
 
 form:hover {
@@ -130,6 +143,10 @@ input[type=password]:focus {
     border: 1px solid;
     border-color: #8b8b8b;
     border-radius: 0.2vmax;
+}
+
+textarea {
+    word-wrap: normal;
 }
 
 .komentet:hover {

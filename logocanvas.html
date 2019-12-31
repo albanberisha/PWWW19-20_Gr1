@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
-
+<link rel="stylesheet" href="cssiseminarit.css">
 <body>
+    <!--<div id="rotate0">Divi fillestar</div>
+    <div id="rotate">Divi i rrotulluar per 150deg te X</div>
+    <div id="rotate1">Divi i rrotulluar per 150deg te Y</div>
+-->
 
     <canvas id="myCanvas" width="400" height="100" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
-
     <script>
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
         ctx.lineWidth = 10;
         ctx.lineCap = "round";
         ctx.beginPath();
+
+            // Create gradient
+
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "yellow");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 375, 80);
+
+        
         //shkronja T
         ctx.moveTo(20, 20);
         ctx.lineTo(70, 20);
@@ -69,7 +84,17 @@ Your browser does not support the HTML5 canvas tag.</canvas>
         ctx.ellipse(314, 60, 14, 14, 0, 3.4, 3.14);
         ctx.stroke();
     </script>
+<p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/un1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        
+    </div>
+</p>
 </body>
+<script src="js/drag_drop.js" type="text/JavaScript"></script>
 
 
 </html>
