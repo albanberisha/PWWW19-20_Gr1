@@ -175,6 +175,7 @@ button:hover {
 }
 
 .buttongroup a {
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
     background-color: #93435c;
@@ -544,7 +545,7 @@ footer {
     list-style: none;
 }
 
-.inline2 input[type=text] {
+.inline2 .input {
     border: 1px solid;
     border-radius: 0.3em;
     border-color: white;
@@ -619,80 +620,196 @@ footer {
 
 .tregolokacionin {
     margin-top: 1vmax;
+    border: 1px solid;
     border-radius: 0.3vmax;
 }
+
+
 /*Drag and drop*/
+
 #div1 {
-  float: left;
-  
-  
-  margin: 1vmax;
-  margin-top: 120px;
-  padding: 10px;
-  border: 1px solid black;
-  background-color: skyblue;
+    float: left;
+    margin: 1vmax;
+    margin-top: 120px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: skyblue;
 }
+
 #div2 {
-  float: left;
- 
-  margin: 1vmax;
-  margin-top: 120px;
-  padding: 10px;
-  border: 1px solid black;
-  background-color: skyblue;
+    float: left;
+    margin: 1vmax;
+    margin-top: 120px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: skyblue;
 }
+
+
 /*Resize dhe outline offset*/
- #div1,#div2 {
-  border: 2px solid;
-  padding: 20px; 
-  width: 100px;
-  resize: both;
-  overflow: auto;
-  outline: 5px dotted blue;
-  outline-offset: 5px;
+
+#div1,
+#div2 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100px;
+    resize: both;
+    overflow: auto;
+    outline: 5px dotted blue;
+    outline-offset: 5px;
 }
+
 
 /*@keyframe*/
+
 #div1 {
-  position :relative;
-  animation: mymove 5s;/*mujme me ba edhe infinite
+    position: relative;
+    animation: mymove 5s;
+    /*mujme me ba edhe infinite
                           animacion:mymove 5s infinite;*/
-  
 }
-#div2
-{
-  position :relative;
-  animation: mymove 7s;/*mujme me ba edhe infinite
+
+#div2 {
+    position: relative;
+    animation: mymove 7s;
+    /*mujme me ba edhe infinite
                           animacion:mymove 5s infinite;*/
-   
 }
+
 @keyframes mymove {
-
-  from {top: 0px;}
-  to {top: 200px;}
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
 }
+
+
 /*RotateX dhe Y*/
- /*#rotate0 {
-  
-  width: 300px;
-  height: 100px;
-  background-color: yellow;
-  border: 1px solid black;
-}
-#rotate
-{
-    transform: rotateX(150deg);
-    
-}
- #rotate1 {
-  
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-  border: 1px solid black;
+
+.peshku {
+    margin-bottom: 2px;
+    transform: rotateY(3.142rad);
+    background-color: rgb(150, 150, 153);
+    padding-left: 5px;
+    width: 400px;
 }
 
-#rotate1
-{
-    transform: rotateY(150deg);
-}*/
+.peshku2 {
+    transform: rotateX(3.142rad);
+    background-color: rgb(150, 150, 153);
+    padding-left: 3.4px;
+    width: 407px;
+}
+
+.peshku3 {
+    background-color: rgb(150, 150, 153);
+    transform: rotate(90deg);
+    margin-top: -85px;
+    margin-left: 345px;
+    padding: 3.4px;
+    width: 138px;
+}
+
+#more {
+    display: none;
+}
+
+
+/* pjesa per template-in e gallerys */
+
+#galleria {
+    margin-left: 1.2vmax;
+    margin-right: 1.2vmax;
+    background-color: white;
+    margin-top: -16px;
+    background: url(images/kamera3.jpg) left top repeat, url(images/kamera2.jpg) right bottom repeat;
+    background-size: 100% 51%, 100% 50%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    margin-bottom: -2.3vmax;
+}
+
+div.desc {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.figura img:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
+}
+
+.figura dl dt img {
+    margin-top: 10px;
+    margin-left: 43vmax;
+    float: right;
+    filter: grayscale(75%);
+    width: 53%;
+    height: 100%;
+}
+
+
+/*Dizejnimi i template-it menaxhmenti*/
+
+#menaxhmenti {
+    margin-left: 1.2vmax;
+    margin-right: 1.2vmax;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
+    background-color: white;
+    font-size: 1.6vmax;
+}
+
+#kerko {
+    border-radius: 0.5vmax;
+    border: 1px solid;
+    width: 7vmax;
+    font-size: 1.5vmax;
+    height: 2.6vmax;
+}
+
+#kodi {
+    border-radius: 0.5vmax;
+    border: 1px solid rgb(124, 124, 124);
+    font-size: 1.5vmax;
+    height: 2.4vmax;
+}
+
+#menaxhmenti nav {
+    margin: 0 1em 1em 1em;
+}
+
+#emri,
+#mbiemri {
+    margin-top: 1em;
+}
+
+.nested {
+    padding-left: 2em;
+    background-color: white;
+}
+
+.nested li {
+    display: list-item;
+    list-style-type: square;
+}
+
+.nested ul .round {
+    margin-left: 2em;
+    display: list-item;
+    list-style-type: circle;
+}
+
+.square {
+    margin-left: 5em;
+    display: list-item;
+    list-style-type: square;
+}
+
+.number li {
+    margin-left: 5em;
+    display: list-item;
+    list-style-type: decimal;
+}

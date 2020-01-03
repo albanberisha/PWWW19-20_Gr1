@@ -5,7 +5,7 @@ header {
 }
 
 html {
-    background-image: url(images/back.png);
+    /*background-image: url(images/back.png);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vmax 100%;
@@ -27,8 +27,9 @@ h1 {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
+    padding-left: 7vmax;
+    margin-right: 27%;
     background-color: none;
-    margin-right: 23vmax;
 }
 
 form {

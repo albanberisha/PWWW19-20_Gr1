@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Formular per aplikim ne pune</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="information.css" >
-    <style>
+   <script>
+       </script>
+   
+   
+   
+   <style>
         
         .forma h1{
             text-shadow: 3px 2px rgb(136, 136, 255);
@@ -32,25 +36,31 @@
             0% {
                 left: 0;
                 top: 0;
+                background:#E0F8FB;
             }
 
             25% {
                 left: 9vmax;
                 top: 0px;
+                background:#F7FDFC;
             }
 
             50% {
                 left: 18vmax;
                 top: 0;
+                background: #D3F5FC;
             }
 
             75% {
                 left: 9vmax;
+                background:#F7FDFC;
+                
                 top: 0px;
             }
 
             100% {
                 left: 0;
+                background:#E0F8FB;
                 top: 0;
             }
 
@@ -210,7 +220,6 @@
                     <li>
                         <button class="submit">Apliko</button> </li>
                 </ul>
-
             </p>
             <p>
                 <label id="text">
@@ -220,6 +229,8 @@
         </form>
     </div>
 </body>
+<script src="js/ndrrimiibackgroundit.js" type="text/JavaScript"></script>
+
 </html>
 
 
