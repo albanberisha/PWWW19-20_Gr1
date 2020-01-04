@@ -4,15 +4,14 @@
 <head>
     <title>Formular per aplikim ne pune</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="information.css" >
+    <link rel="stylesheet" type="text/css" href="information.css">
     <style>
-        .prapa:after {
-            content: ""
+        .forma h1 {
+            text-shadow: 3px 2px rgb(136, 136, 255);
+            border: 15px solid transparent;
+            border-image: url(images/borderbackground.png) 40% stretch;
         }
 
-        .forma {
-            text-shadow: 3px 2px #e3e3e3;
-        }
 
         h1 {
             position: relative;
@@ -34,25 +33,31 @@
             0% {
                 left: 0;
                 top: 0;
+                background: #E0F8FB;
             }
 
             25% {
                 left: 9vmax;
                 top: 0px;
+                background: #F7FDFC;
             }
 
             50% {
                 left: 18vmax;
                 top: 0;
+                background: #D3F5FC;
             }
 
             75% {
                 left: 9vmax;
+                background: #F7FDFC;
+
                 top: 0px;
             }
 
             100% {
                 left: 0;
+                background: #E0F8FB;
                 top: 0;
             }
 
@@ -62,11 +67,66 @@
 
 <body>
     <header>
-    <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
+        <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
     </header>
+    <script type="text/javascript">
+        function hello() {
+            
+            if (validateForm() == false) {} else {
+                var click=count();
+                var clicksesion=countsesion();
+                alert("Aplikim i suksesshem. Jeni aplikuesi numer "+click+". Ne kete seksion kane aplikuar "+clicksesion+" aplikues");
+            }
+            function count()
+            {
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                    } else {
+                        localStorage.clickcount = 1;
+                    }
+                }
+                return localStorage.clickcount; 
+            }
+            function countsesion()
+            {
+                if (typeof(Storage) !== "undefined") {
+                    if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                    } else {
+                        sessionStorage.clickcount = 1;
+                    }
+                }
+                return sessionStorage.clickcount; 
+            }
+        
+
+        function validateForm() {
+            var id = document.forms["formaime"]["id"].value;
+            var emri = document.forms["formaime"]["emri"].value;
+            var mbiemri = document.forms["formaime"]["mbiemri"].value;
+            var checkboxi = document.getElementById("checkboxi").checked;
+            if (id == "") {
+                return false;
+            } else {
+                if (emri == "") {
+                    return false;
+                } else {
+                    if (mbiemri == "") {
+                        return false;
+                    } else {
+                        if (checkboxi == false) {
+                            return false;
+                        }
+
+                    }
+                }
+            }
+        }}
+    </script>
     <div class="forma">
         <h1>Aplikim per pune</h1>
-        <form method="post">
+        <form name="formaime" method="post" onsubmit="return validateForm()">
             <p>
                 <label class="required" for="id" id="text" autoselect>Id:</label>
                 <ul class="inline">
@@ -133,7 +193,7 @@
             <p>
                 <ul>
                     <li>
-                        <label class="required" required="required " id="text" for="pozita">Pozita:</label>
+                        <label id="text" for="pozita">Pozita:</label>
                         <ul class="inline">
                             <li>
                                 <audio id="position" src="audio/position.mp3"></audio>
@@ -183,7 +243,7 @@
                         </div>
                     </li>
                     <li>
-                        <textarea class="komentet" name="komentet" cols="30" rows="5" placeholder="Sheno aftesite personale te tjera"></textarea>
+                        <textarea class="komentet" name="komentet" cols="30" rows="5" wrap="hard" placeholder="Sheno aftesite personale te tjera"></textarea>
                     </li>
                 </ul>
             </p>
@@ -196,8 +256,8 @@
                         </div>
                     </li>
                     <li>
-                    
-                        <label class="required"><input name="checkbox" required="required" type="checkbox"></input>I kam lexuar dhe i pranoj kushtet e <a class="terms" href="#"> Privacy Policy</a></label>
+
+                        <label class="required"><input name="checkboxi" id="checkboxi" required="required" type="checkbox"></input>I kam lexuar dhe i pranoj kushtet e <a class="terms" href="#"> Privacy Policy</a></label>
                     </li>
                 </ul>
             </p>
@@ -210,18 +270,19 @@
                         </div>
                     </li>
                     <li>
-                        <button class="submit">Apliko</button> </li>
+                        <button id="apliko" onclick="hello()" class="submit">Apliko</button> </li>
                 </ul>
-
             </p>
             <p>
                 <label id="text">
-                   <mark> <i>Shiko <u><a id="manuali" href="manualiperaplikimvideo.html" target="_blank">videon</a></u> pe ta pare <aabr title="Manuali Per Aplikim">MPA</aabr> me ane te videos</i></mark>
+                    <mark> <i>Shiko <u><a id="manuali" href="manualiperaplikimvideo.html" target="_blank">videon</a></u> pe ta pare <aabr title="Manuali Per Aplikim">MPA</aabr> me ane te videos</i></mark>
                 </label>
             </p>
         </form>
     </div>
 </body>
+<script src="js/ndrrimiibackgroundit.js" type="text/JavaScript"></script>
+
 </html>
 
 
