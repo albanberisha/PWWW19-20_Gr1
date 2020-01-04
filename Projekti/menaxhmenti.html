@@ -26,7 +26,7 @@
                     <li>
                         <a href="login.html">Hyr | </a>
                         <a href="sign.html">Regjistrohu | </a>
-                        <a href="logocanvas.html">Logo </a>
+                        <a href="logosvg.html" target="_blank">Logo </a>
                     </li>
                 </ul>
             </div>
@@ -45,13 +45,9 @@
                 </ul>
             </nav>
             <nav class="buttongroup">
-                <a href="Seminari.html">ballina</a>
-                <a href="Template.html">STYLEDEMO</a>
-                <a href="Template1.html">FULL WIDTH</a>
-                <a href="Template2.html">DROPDOWN</a>
-                <a href="Gallery.html">galleria</a>
-                <a href="menaxhmenti.html">menaxhmenti</a>
-                <a href="Template5.html">LINK TEST</a>
+                <a href="Seminari.html">BALLINA</a>
+                <a href="Gallery.html">Galeria</a>
+                <a href="menaxhmenti.html">MENAXHMENTI</a>
                 <a href="geolocation.html">LOKACIONI</a>
             </nav>
         </header>
@@ -59,60 +55,69 @@
         <main id="menaxhmenti">
             <nav>
                 <p>Kjo eshte hapsire per klientet e Trofta-s.</p>
-                <p>Qe te keni qasje shtyp kodin:</p>
+                <p>Qe te keni qasje shtyp kodin,ndersa per te pare orarin shkruani id te fusha id:</p>
                 Kodi: <input id="kodi">
                 <button id="kerko">Kerko</button>
-
                 <div id="rezultati"></div>
+                <form action="http://localhost:1234/ushtrime/Seminari/Projekti/kodi.php" method="POST">
+                    Id: <input id="kodi" type="text" name="id" placeholder="Shkruani id"> Enkriptimi:
+                    <keygen name="security">
+                    <button id="kerko">Kerko</button>
+                </form>
+
                 <script>
-                    var kodi='trofta';
+                    var kodi = '12345';
+
                     function say_hi() {
                         var fname = document.getElementById('kodi').value;
-                        if (fname.toLowerCase() == kodi) {
-                            var pershendetje = 'Pershendetje klient i nderuar ';
-                            var teksti = '</br>' +
-                                'Kompania jone eshte kompani serioze me tradite dhe organizim evropian. Sistemi i organizimit te gjithe kompanise eshte:' +
-                                '<ul class="nested">' +
-                                '<li>Drejtori' +
-                                '<ul>' +
-                                '<li class="round">Menaxheri i hotelit' +
-                                '<ul class="square">' +
-                                '<li>Pas hapjes se hotelit do te publikohet edhe sistemi per hotel</li>' +
-                                '</ul>' +
-                                '</li>' +
-                                '<li class="round">Menaxheri i restaurantit' +
-                                '<ul class="square">' +
-                                '<li>Shefi i kuzhines,  <a href=punetoret.html>shiko orarin e punetoreve</a>' +
-                                '<ul class="number">' +
-                                ' <li>Shefi i grillit</li>' +
-                                '<li>Shefi i thertores</li>' +
-                                '<li>Shefi i pastrimit</li>' +
-                                '<li>Shefi i peshkut</li>' +
-                                '<li>Shefi i sallatave</li>' +
-                                '<li>Shefi i mishit te pjekur</li>' +
-                                '<li>Pastruesit</li>' +
-                                '</ul>' +
-                                '</li>' +
-                                '<li>Shefi i salles' +
-                                '<ul class="number">' +
-                                '<li>Kamarjer</li>' +
-                                '<li>Barist</li>' +
-                                '<li>Mikprites</li>' +
-                                '<li>Mirmbajtes</li>' +
-                                '</ul>' +
-                                '</li>' +
-                                '</li>' +
-                                '</u>' +
-                                '</li>' +
-                                '</ul>';
-                            var html = pershendetje + teksti;
-                            document.getElementById('rezultati').innerHTML = html;
-                        } else {
-                            var error = 'Kodi gabim. Nese nuk e keni kodin atehere drejtohuni tek zyrat e tona. ';
-                            document.getElementById('rezultati').innerHTML = error;
+                        try {
+
+                            if ((fname.toLowerCase()).localeCompare(kodi) == 0) {
+                                var pershendetje = 'Pershendetje klient i nderuar ';
+                                var teksti = '</br>' +
+                                    'Kompania jone eshte kompani serioze me tradite dhe organizim evropian. Sistemi i organizimit te gjithe kompanise eshte:' +
+                                    '<ul class="nested">' +
+                                    '<li>Drejtori' +
+                                    '<ul>' +
+                                    '<li class="round">Menaxheri i hotelit' +
+                                    '<ul class="square">' +
+                                    '<li>Pas hapjes se hotelit do te publikohet edhe sistemi per hotel</li>' +
+                                    '</ul>' +
+                                    '</li>' +
+                                    '<li class="round">Menaxheri i restaurantit' +
+                                    '<ul class="square">' +
+                                    ' <li><input type="text" list="shefat"><datalist id="shefat"><option value="Shefi i kuzhines"><option value="Shefi i grillit"><option value="Shefi i thertores"> <option value="Shefi i pastrimit"><option value="Shefi i peshkut"><option value="Shefi i sallatave"> <option value="Shefi i mishit te pjekur"><option value="Pastruesit"></datalist></li>' +
+                                    '</ul>' +
+                                    '</li>' +
+                                    '<li>Shefi i salles' +
+                                    '<ul class="number">' +
+                                    '<li>Kamarjer</li>' +
+                                    '<li>Barist</li>' +
+                                    '<li>Mikprites</li>' +
+                                    '<li>Mirmbajtes</li>' +
+                                    '</ul>' +
+                                    '</li>' +
+                                    '</li>' +
+                                    '</u>' +
+                                    '</li>' +
+                                    '</ul>';
+
+
+                                var html = pershendetje + teksti;
+                                document.getElementById('rezultati').innerHTML = html;
+                                throw html;
+
+                            }
+                            if (isNaN(fname)) throw 'Shkruaj numer';
+                            else {
+                                var error = 'Kodi gabim. Nese nuk e keni kodin atehere drejtohuni tek zyrat e tona. ';
+                                throw error;
+                            }
+                        } catch (err) {
+                            document.getElementById('rezultati').innerHTML = err;
+
                         }
                     }
-
                     document.getElementById('kerko').addEventListener('click', say_hi);
                 </script>
         </main>
@@ -154,20 +159,23 @@
                     <p><b>Orari i pun&#235s</b></p>
                     <p>Cdo dit&#235:08:00-23:30</p>
                 </td>
+
+
+
                 <td class="aaa" rowspan="2">
                     <div class="forma3">
-                        <form method="post">
+                        <form id="forme" method="post">
                             <p>
                                 <ol class="inline2">
                                     <li>
-                                        <input type="text" placeholder="Sh&#235no Emrin" name="uname">
+                                        <input type="text" placeholder="Sh&#235no Emrin" id="uname" class="uname" name="uname" required="required">
                                     </li>
                                 </ol>
                             </p>
                             <p>
                                 <ol class="inline2">
                                     <li>
-                                        <input type="text" placeholder="Emaili" name="email">
+                                        <input type="text" placeholder="Emaili" name="email" required="required">
                                     </li>
                                 </ol>
 
@@ -175,12 +183,12 @@
                             <p>
                                 <ol class="inline2">
                                     <li class="area">
-                                        <textarea placeholder="Mesazhi"></textarea>
+                                        <textarea placeholder="Mesazhi" required="required"></textarea>
                                     </li>
                                 </ol>
                             </p>
                             <p>
-                                <a href="#" class="submiti2" onclick="return false;"><button>D&#235rgo</button></a>
+                                <a href="#" class="submiti2"><button>D&#235rgo</button></a>
                             </p>
                         </form>
                     </div>

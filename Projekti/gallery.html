@@ -40,7 +40,7 @@
                     <li>
                         <a href="login.html">Hyr | </a>
                         <a href="sign.html">Regjistrohu | </a>
-                        <a href="logocanvas.html">Logo </a>
+                        <a href="logosvg.html" target="_blank">Logo </a>
                     </li>
                 </ul>
             </div>
@@ -60,12 +60,8 @@
             </nav>
             <nav class="buttongroup">
                 <a href="Seminari.html">BALLINA</a>
-                <a href="Template.html">STYLEDEMO</a>
-                <a href="Template1.html">FULL WIDTH</a>
-                <a href="Template2.html">DROPDOWN</a>
-                <a href="Gallery.html">GALLERY</a>
+                <a href="Gallery.html">Galeria</a>
                 <a href="menaxhmenti.html">MENAXHMENTI</a>
-                <a href="Template5.html">LINK TEST</a>
                 <a href="geolocation.html">LOKACIONI</a>
             </nav>
         </header>
@@ -159,20 +155,23 @@
                     <p><b>Orari i pun&#235s</b></p>
                     <p>Cdo dit&#235:08:00-23:30</p>
                 </td>
+
+
+
                 <td class="aaa" rowspan="2">
                     <div class="forma3">
-                        <form method="post">
+                        <form id="forme" method="post">
                             <p>
                                 <ol class="inline2">
                                     <li>
-                                        <input type="text" placeholder="Sh&#235no Emrin" name="uname">
+                                        <input type="text" placeholder="Sh&#235no Emrin" id="uname" class="uname" name="uname" required="required">
                                     </li>
                                 </ol>
                             </p>
                             <p>
                                 <ol class="inline2">
                                     <li>
-                                        <input type="text" placeholder="Emaili" name="email">
+                                        <input type="text" placeholder="Emaili" name="email" required="required">
                                     </li>
                                 </ol>
 
@@ -180,12 +179,12 @@
                             <p>
                                 <ol class="inline2">
                                     <li class="area">
-                                        <textarea placeholder="Mesazhi"></textarea>
+                                        <textarea placeholder="Mesazhi" required="required"></textarea>
                                     </li>
                                 </ol>
                             </p>
                             <p>
-                                <a href="#" class="submiti2" onclick="return false;"><button>D&#235rgo</button></a>
+                                <a href="#" class="submiti2"><button>D&#235rgo</button></a>
                             </p>
                         </form>
                     </div>

@@ -13,18 +13,41 @@
     <header>
         <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
     </header>
+    <script type="text/javascript">
+        function validateForm() {
+            var emri = document.forms["formaime"]["emri"].value;
+            var paswordi = document.forms["formaime"]["psw"].value;
+            var paswordi2 = document.forms["formaime"]["psw2"].value;
+            if (emri == "") {
+                return false;
+            } else {
+                if (paswordi == "") {
+                    return false;
+                } else {
+                    if (paswordi2 == "") {
+                        return false;
+                    } else {
+                        if (paswordi.localeCompare(paswordi2) != 0) {
+                            alert("Paswordat nuk perputhen. Provoni perseri.");
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <div class="forma">
-        <form method="post">
+        <form id="formaime" method="post">
             <p>
                 <label class="required" for="username" id="text" autoselect><b>Emri:</b></label>
                 <ul class="inline">
                     <li>
-                        <input type="text" placeholder="Sheno Emrin" name="uname" required>
+                        <input type="text" placeholder="Sheno Emrin" name="emri" name="uname" required>
                     </li>
                 </ul>
             </p>
             <p>
-                <label class="required" for="password" id="text"><b>Paswordi:</b></label>
+                <label class="required" for="password" name="psw" id="text"><b>Paswordi:</b></label>
                 <ul class="inline">
                     <li>
                         <input type="password" placeholder="Sheno Paswordin" name="psw" required>
@@ -51,10 +74,10 @@
                         <span class="psw">Krijo nje <a href="sign.html">llogari</a> te re.</span>
                     </li>
                     <p>
-                    <li>
-                    	<span class="psw">Dëshironi të luani një lojë?  <a href="loja1.html" target="_blank">Luaj.</a></span>
-                    </li>
-                </p>
+                        <li>
+                            <span class="psw">Dëshironi të luani një lojë?  <a href="loja1.html" target="_blank">Luaj.</a></span>
+                        </li>
+                    </p>
                 </ul>
             </p>
         </form>
