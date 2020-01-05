@@ -70,15 +70,23 @@
         <button class="back_button"><a href="Seminari.html"><b>Prapa</b></a></button>
     </header>
     <script type="text/javascript">
+        var koha=0;
+        var mesazhi;
         function hello() {
-            
-            if (validateForm() == false) {} else {
-                var click=count();
-                var clicksesion=countsesion();
-                alert("Aplikim i suksesshem. Jeni aplikuesi numer "+click+". Ne kete seksion kane aplikuar "+clicksesion+" aplikues");
+            var i = stopWorker();
+            if (koha==0) {
+                mesazhi=" ";
+            }else{
+                mesazhi="Koha per aplikim ishte "+koha+" minuta";
             }
-            function count()
-            {
+            if (validateForm() == false) {} else {
+                var click = count();
+                var clicksesion = countsesion();
+                var msg = "Aplikim i suksesshem. Jeni aplikuesi numer " + click + ". Ne kete seksion kane aplikuar " + clicksesion + " aplikues. ";
+                alert(msg + mesazhi);
+            }
+
+            function count() {
                 if (typeof(Storage) !== "undefined") {
                     if (localStorage.clickcount) {
                         localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -86,47 +94,77 @@
                         localStorage.clickcount = 1;
                     }
                 }
-                return localStorage.clickcount; 
+                return localStorage.clickcount;
             }
-            function countsesion()
-            {
+
+            function countsesion() {
                 if (typeof(Storage) !== "undefined") {
                     if (sessionStorage.clickcount) {
-                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
                     } else {
                         sessionStorage.clickcount = 1;
                     }
                 }
-                return sessionStorage.clickcount; 
+                return sessionStorage.clickcount;
             }
-        
 
-        function validateForm() {
-            var id = document.forms["formaime"]["id"].value;
-            var emri = document.forms["formaime"]["emri"].value;
-            var mbiemri = document.forms["formaime"]["mbiemri"].value;
-            var checkboxi = document.getElementById("checkboxi").checked;
-            if (id == "") {
-                return false;
-            } else {
-                if (emri == "") {
+
+            function validateForm() {
+                var id = document.forms["formaime"]["id"].value;
+                var emri = document.forms["formaime"]["emri"].value;
+                var mbiemri = document.forms["formaime"]["mbiemri"].value;
+                var checkboxi = document.getElementById("checkboxi").checked;
+                if (id == "") {
                     return false;
                 } else {
-                    if (mbiemri == "") {
+                    if (emri == "") {
                         return false;
                     } else {
-                        if (checkboxi == false) {
+                        if (mbiemri == "") {
                             return false;
-                        }
+                        } else {
+                            if (checkboxi == false) {
+                                return false;
+                            }
 
+                        }
                     }
                 }
             }
-        }}
+        }
+
+        function startWorker() {
+
+            if (typeof(Worker) !== "undefined") {
+
+                if (typeof(w) == "undefined") {
+                    w = new Worker("js/demo_workers.js");
+                }
+                w.onmessage = function(event) {
+                    koha = event.data;
+                };
+            } else {
+               alert("Web Browseri juaj nuk e mbeshtet Web Workers...");
+            }
+        }
+
+        function stopWorker() {
+            return koha;
+            w.terminate();
+            w = undefined;
+        }
     </script>
+
     <div class="forma">
         <h1>Aplikim per pune</h1>
+        <ul class="inline" style="margin-left: 9vmax">
+            <p id="result">Per ta llogaritur kohen e aplikimit ne minuta shtyp butonin</p>
+            <li>
+                <button onclick="startWorker()">Starto</button>
+            </li>
+        </ul>
         <form name="formaime" method="post" onsubmit="return validateForm()">
+
             <p>
                 <label class="required" for="id" id="text" autoselect>Id:</label>
                 <ul class="inline">

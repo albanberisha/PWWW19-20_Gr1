@@ -9,8 +9,7 @@
             peshku me i mire
         </div>
         <canvas id="myCanvas" width="400" height="100" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-
+        Web Browseri juaj nuk e mbeshtet HTML5 canvas-in.</canvas>
         <script>
             var c = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
@@ -18,16 +17,14 @@ Your browser does not support the HTML5 canvas tag.</canvas>
             ctx.lineCap = "round";
             ctx.beginPath();
 
-            // Create gradient
-
+            // Krijo gradientin
             var grd = ctx.createLinearGradient(0, 0, 200, 0);
             grd.addColorStop(0, "red");
             grd.addColorStop(1, "yellow");
 
-            // Fill with gradient
+            // Mbush gradientin
             ctx.fillStyle = grd;
             ctx.fillRect(10, 10, 375, 80);
-
 
             //shkronja T
             ctx.moveTo(20, 20);
@@ -81,7 +78,6 @@ Your browser does not support the HTML5 canvas tag.</canvas>
             ctx.ellipse(308, 53, 18, 25, 0.8, 3.4, -1.3);
             ctx.stroke();
 
-
             ctx.beginPath();
             ctx.ellipse(314, 60, 14, 14, 0, 3.4, 3.14);
             ctx.stroke();
@@ -96,12 +92,11 @@ Your browser does not support the HTML5 canvas tag.</canvas>
         </div>
     </nav>
     <div style="margin-top: 100px; margin-bottom: -100px;">
-        <p>Ne vazhdim japim logon origjinale(ne canvas me ane te fotografise).<br> Kloko per ta vendosur:</p>
+        <p>Ne vazhdim japim logon origjinale(ne canvas me ane te fotografise).<br> Kliko per ta vendosur:</p>
         <p><a href="#" onClick="vendos();">Trego foton</a></p>
         <img id="logoja" hidden src="images/troftalogo.jfif" alt="logoja" width="50%" height="50%">
         <canvas id="myCanvas2" width="245" height="245" style=" margin-left: 60px;margin-bottom: 20px; border:1px solid #d3d3d3; transform: skew(-0.06turn, 18deg);">
-
-            Your browser does not support the HTML5 canvas tag.
+            Web Browseri juaj nuk e mbeshtet HTML5 canvas-in.
     </canvas>
     </div>
     <script>
@@ -116,9 +111,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
         <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
             <img src="images/un1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
         </div>
-
         <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-
         </div>
     </p>
 </body>
