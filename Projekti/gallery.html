@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="cssiseminarit.css">
     <link rel="stylesheet" href="reset.css">
-
-    <link rel="stylesheet" href="lightbox.min.css">
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <title>Gallery</title>
     <style>
         @font-face {
@@ -69,7 +66,7 @@
             <div class="figura">
                 <dl>
                     <dt>
-                        <a href="images/00.png" data-lightbox="mygallery"><img src="images/00.png" width="800px" height="207px"></a>
+                        <a href="images/00.png" data-lightbox="mygallery"><img src="images/00.png" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Nje pamje mahnitese e Troftes gjate stines se veres</p>
                         </div>
@@ -77,7 +74,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="images/01.jpg" data-lightbox="mygallery"><img src="images/01.jpg" width="800px" height="207px"></a>
+                        <a href="images/01.jpg" data-lightbox="mygallery"><img src="images/01.jpg" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Pamje e basenave te Troftes, ku edhe mirren peshqit e fresket</p
                                 class="teksti">
@@ -86,7 +83,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="images/02.jpg" data-lightbox="mygallery"><img src="images/02.jpg" width="800px" height="207px"></a>
+                        <a href="images/02.jpg" data-lightbox="mygallery"><img src="images/02.jpg" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Pamje nga tarasa, duke kapur edhe bjeshket e Istogut</p class="teksti">
                         </div>
@@ -94,7 +91,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="images/03.jpg" data-lightbox="mygallery"><img src="images/03.jpg" width="800px" height="207px"></a>
+                        <a href="images/03.jpg" data-lightbox="mygallery"><img src="images/03.jpg" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Nje tjeter pamje e basenave, kesaj here nga afer</p class="teksti">
                         </div>
@@ -102,7 +99,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="images/04.jpg" data-lightbox="mygallery"><img src="images/04.jpg" width="800px" height="207px"></a>
+                        <a href="images/04.jpg" data-lightbox="mygallery"><img src="images/04.jpg" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Ketu shihet numri i madh i basenave qe posedojme</p class="teksti">
                         </div>
@@ -110,7 +107,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="images/05.jpg" data-lightbox="mygallery"><img src="images/05.jpg" width="800px" height="207px"></a>
+                        <a href="images/05.jpg" data-lightbox="mygallery"><img src="images/05.jpg" alt="Fotoja nuk eshte ne dispozicion" width="800px" height="207px"></a>
                         <div class="desc">
                             <p class="tekstii">Nje pamje gjate nates ne restaurant</p class="teksti">
                         </div>
@@ -171,7 +168,7 @@
                             <p>
                                 <ol class="inline2">
                                     <li>
-                                        <input type="text" placeholder="Emaili" name="email" required="required">
+                                        <input type="text" placeholder="Emaili" id="email" name="email" required="required">
                                     </li>
                                 </ol>
 
@@ -179,12 +176,12 @@
                             <p>
                                 <ol class="inline2">
                                     <li class="area">
-                                        <textarea placeholder="Mesazhi" required="required"></textarea>
+                                        <textarea placeholder="Mesazhi" id="mesazhi" required="required"></textarea>
                                     </li>
                                 </ol>
                             </p>
                             <p>
-                                <a href="#" class="submiti2"><button>D&#235rgo</button></a>
+                                <a href="#" class="submiti2"><button onclick="validoo()">D&#235rgo</button></a>
                             </p>
                         </form>
                     </div>
@@ -214,5 +211,6 @@
     </div>
     </div>
 </footer>
+<script src="js/valido.js " type="text/JavaScript "></script>
 
 </html>

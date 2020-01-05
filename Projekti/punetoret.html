@@ -104,8 +104,14 @@
                     <td>
                         <p id="ip4"></p>
                         <script>
+                            function Orari3(id, ore_gjate,ore_jashta) {
+                                    this.id = id;
+                                    this.ore_gjate = ore_gjate;
+                                    this.ore_jashta = ore_jashta;
+                                        }
+                    var oret2 = new Orari3(104,40,2.20);
                             document.getElementById("ip4").innerHTML = 'Punetori me id(104) ka punuar 2 ore e 20 minuta ,pra do ta bejme rrumbullaksimin nga poshte = ' +
-                                Math.floor(2.20);
+                                Math.floor(oret2.ore_jashta);
                         </script>
                     </td>
 
@@ -126,7 +132,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        <div class="tabelja">
+                        <div id="tabelja">
                             Siq mund te shihni ketu kemi paraqitur orarin e paradites se punetoreve te Troftes.Ku ne vend te emrave per shkak te ruajtes se privatesise kemi shkruar id e tyre.Poashtu ketu kemi paraqitur edhe oret qe ata kane punuar gjate javes(gjate orarit te rregullt)
                             dhe oret shtese(jashta orarit te rregullt te punes).
                         </div>
